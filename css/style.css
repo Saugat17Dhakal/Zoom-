@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.container .head {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: #0a7563f1;
+}
+
+.container .head .colored {
+  color: #f0e009;
+}
+
+.container .dropdown {
+  position: relative;
+}
+
+.container .dropdown .dropdown-opener {
+  border: 1px solid #313131;
+  padding: .5rem 1rem;
+  width: 17.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.container .dropdown .dropdown-opener .chevron {
+  margin: auto 0 auto auto;
+  height: 15px;
+  width: auto;
+  float: right;
+}
+
+.container .dropdown .dropdown-content {
+  position: absolute;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+          box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+  width: 100%;
+  padding: .5rem 1rem;
+  top: 8rem;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.container .dropdown .dropdown-content.active {
+  top: 3rem;
+  visibility: visible;
+  opacity: 1;
+}
+
+.container .display-link {
+  margin: 1rem auto;
+}
+
+.container .display-link a {
+  color: slateblue;
+  text-decoration: none;
+}
+
+.container .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid #444444;
+  border-top-width: 0px;
+}
+
+.dropdown-content.active > div {
+  margin: .6rem auto;
+  cursor: pointer;
+  -webkit-transition: all 350ms ease;
+  transition: all 350ms ease;
+}
+
+.dropdown-content.active > div:hover {
+  color: slateblue;
+}
+/*# sourceMappingURL=style.css.map */
