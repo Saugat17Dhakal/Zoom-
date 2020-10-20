@@ -33,6 +33,10 @@ body {
   font-weight: 400;
   color: #0a7563f1;
 }
+.school{
+margin: 1.25rem auto;
+}
+  
 
 .container .head .colored {
   color: #f0e009;
