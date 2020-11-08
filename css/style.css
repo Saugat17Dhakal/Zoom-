@@ -112,4 +112,7 @@ body {
 .dropdown-content.active > div:hover {
   color: slateblue;
 }
+.date{
+    margin: 10px auto;
+}
 /*# sourceMappingURL=style.css.map */
