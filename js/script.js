@@ -11,6 +11,7 @@ const english1 = document.querySelector('.english-1')
 const english2 = document.querySelector('.english-2')
 const science = document.querySelector('.science')
 const social = document.querySelector('.social')
+const science2 = document.querySelector('.science-2')
 const account = document.querySelector('.account')
 const nepali = document.querySelector('.nepali')
 const health = document.querySelector('.health')
@@ -77,3 +78,8 @@ stats.onclick = () => {
     `
     dropdown.classList.remove('active')
 }
+science2.onclick = () => {
+    link.innerHTML = `
+    Click <a href="https://us04web.zoom.us/j/8472094956?pwd=Wm9ZR3NpcGdXSnFYU2p4anU3cmVlZz09" target="_blank">here</a> to join Science(Bhuvan Sir) Class.
+    `
+    dropdown.classList.remove('active')
