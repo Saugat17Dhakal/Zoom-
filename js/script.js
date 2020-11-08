@@ -83,3 +83,4 @@ science2.onclick = () => {
     Click <a href="https://us04web.zoom.us/j/8472094956?pwd=Wm9ZR3NpcGdXSnFYU2p4anU3cmVlZz09" target="_blank">here</a> to join Science(Bhuvan Sir) Class.
     `
     dropdown.classList.remove('active')
+}
