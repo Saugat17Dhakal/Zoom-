@@ -10,8 +10,8 @@ const math2 = document.querySelector('.maths-2')
 const english1 = document.querySelector('.english-1')
 const english2 = document.querySelector('.english-2')
 const science = document.querySelector('.science')
-const social = document.querySelector('.social')
 const science2 = document.querySelector('.science-2')
+const social = document.querySelector('.social')
 const account = document.querySelector('.account')
 const nepali = document.querySelector('.nepali')
 const health = document.querySelector('.health')
@@ -84,3 +84,30 @@ science2.onclick = () => {
     `
     dropdown.classList.remove('active')
 }
+
+// DISPLAY DATE
+
+const newDate = new Date()
+    
+const date = newDate.getDate()
+const month = newDate.getMonth() + 1
+const year = newDate.getFullYear()
+const day = newDate.getDay()
+
+const dateValue = date + "/" + month + "/" + year
+const dateDisplay = document.querySelector('.date')
+
+dateDisplay.innerHTML = `Date: ${dateValue}`
+
+
+dayInName = () => {
+    if(day == 0 || day == 2){
+        science.style.display = "none"
+    }
+    else{
+        science2.style.display = "none"
+    }
+}
+
+dayInName()
+// console.log(day)
